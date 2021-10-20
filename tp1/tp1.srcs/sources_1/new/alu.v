@@ -23,7 +23,7 @@
 module alu
 #
 (
-    parameter DATA_SIZE = 8;
+    parameter DATA_SIZE = 8
 )
 (
     input wire [DATA_SIZE - 1: 0] i_a, i_b,
@@ -60,6 +60,6 @@ module alu
         endcase
     end
     // set outputs
-    assign o_result = result
+    assign o_result = result;
 
 endmodule
