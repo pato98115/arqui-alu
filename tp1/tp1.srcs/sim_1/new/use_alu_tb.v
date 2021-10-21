@@ -36,7 +36,7 @@ localparam      SRL     =   6'b000010;
 localparam      NOR     =   6'b100111;
 
 // period
-localparam T = 20;
+localparam T = 10;
 
 // Inputs
 reg [DATA_SIZE - 1: 0] switches;
@@ -58,7 +58,6 @@ use_alu uut (
 );
 
 initial begin
-    #(T * 500)
 	// init clock
 	clk = 0;
 	// init inputs
@@ -98,17 +97,17 @@ input [5 : 0] opcode;
 	begin
 		@(posedge clk);
 		switches = data_A;
-		button_A = 1;
+		button_A = 1'b1;
 		@(posedge clk);
-		button_A = 0;
+		button_A = 1'b0;
 		switches = data_B;
-		button_B = 1;
+		button_B = 1'b1;
 		@(posedge clk);
-		button_B = 0;
+		button_B = 1'b0;
 		switches = {2'b00, opcode};
-		button_op = 1;
+		button_op = 1'b1;
 		@(posedge clk);
-		button_op = 0;
+		button_op = 1'b0;
 
 
 		case(opcode)
