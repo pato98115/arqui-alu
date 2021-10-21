@@ -23,7 +23,7 @@
 module use_alu
 (
     input wire [7:0] i_switches,
-    input wire i_btn, i_btn, i_btn_op, i_clk,
+    input wire i_btn_a, i_btn_b, i_btn_op, i_clk,
 
     output wire [7:0] o_result
 );
@@ -33,17 +33,17 @@ module use_alu
     reg [5:0] operation;
 
 //  input activation logic (basically a mux but with buttons)
-    always @(posedge clk) begin
+    always @(posedge i_clk) begin
         if(i_btn_a == 1) 
             data_a = i_switches;
     end
 
-    always @(posedge clk) begin
+    always @(posedge i_clk) begin
         if(i_btn_b == 1) 
             data_b = i_switches;
     end
 
-    always @(posedge clk) begin
+    always @(posedge i_clk) begin
         if(i_btn_op == 1) 
             operation = i_switches[5:0];
     end

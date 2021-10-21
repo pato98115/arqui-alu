@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 20 21:15:10 2021
+# Process ID: 22760
+# Current directory: /home/patricio/Facultad/arqui/practico/arqui-alu/tp1/tp1.runs/synth_1
+# Command line: vivado -log use_alu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source use_alu.tcl
+# Log file: /home/patricio/Facultad/arqui/practico/arqui-alu/tp1/tp1.runs/synth_1/use_alu.vds
+# Journal file: /home/patricio/Facultad/arqui/practico/arqui-alu/tp1/tp1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source use_alu.tcl -notrace
