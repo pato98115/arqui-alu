@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"use_alu_tb_time_synth.v" \
+"../../../../../tp1.srcs/sim_1/new/use_alu_tb.v" \
+
+# Do not sort compile order
+nosort

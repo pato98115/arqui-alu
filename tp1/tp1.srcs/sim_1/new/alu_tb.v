@@ -93,7 +93,7 @@ initial begin
                 XOR: if(result != (data_a ^ data_b)) begin
                     $display("Error: %b ^ %b; Expected %b; Got %b", data_a, data_b, (data_a ^ data_b), result);
                 end
-                SRA: if(result != ($signed(data_a) >>> data_b)) begin
+                SRA: if($signed(result) != ($signed(data_a) >>> data_b)) begin
                     $display("Error: %b >>> %b; Expected %b; Got %b", data_a, data_b, ($signed(data_a) >>> data_b), result);
                 end
                 SRL: if(result != (data_a >> data_b)) begin
@@ -104,8 +104,8 @@ initial begin
                 end
             endcase
         end
+        $display("Testing ended");
     end
-    $display("Testing ended");
 
     #(T*5) $finish;
 end

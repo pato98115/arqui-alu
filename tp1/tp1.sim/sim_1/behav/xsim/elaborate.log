@@ -1,15 +1,8 @@
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: /home/jerebenitez/Xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 292bfd3cf49b44f5b170b7b8bea0fe79 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot use_alu_tb_behav xil_defaultlib.use_alu_tb xil_defaultlib.glbl -log elaborate.log 
+Running: /home/patricio/tools/xilinx/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab -wto 292bfd3cf49b44f5b170b7b8bea0fe79 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot use_alu_tb_behav xil_defaultlib.use_alu_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.alu
-Compiling module xil_defaultlib.use_alu
-Compiling module xil_defaultlib.use_alu_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot use_alu_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

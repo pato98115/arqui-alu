@@ -36,7 +36,7 @@ localparam      SRL     =   6'b000010;
 localparam      NOR     =   6'b100111;
 
 // period
-localparam T = 10;
+localparam T = 100;
 
 // Inputs
 reg [DATA_SIZE - 1: 0] switches;
@@ -83,7 +83,6 @@ initial begin
 	#(T * 5)
 	test_op(8'b10101010, 8'b01010101, NOR);
 	
-	#(T * 500) $finish;
 end
 
 always #(T/2) clk = ~clk;

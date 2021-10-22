@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/patricio/Facultad/arqui/practico/arqui-alu/tp1/tp1.sim/sim_1/synth/timing/xsim/use_alu_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module use_alu
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/patricio/Facultad/arqui/practico/arqui-alu/tp1/tp1.srcs/sim_1/new/use_alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module use_alu_tb
